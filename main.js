@@ -1,11 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  addDoc,
-} from "firebase/00 firestore";
+import { getFirestore, collection, getDocs, addDoc } from "firebase/firestore";
 import { fetchHistoryData } from "./my-modules/fetch-history-data";
 import { submitData } from "./my-modules/submit-data";
 // TODO: Add SDKs for Firebase products that you want to use
