@@ -14,12 +14,12 @@ import { submitData } from "./my-modules/submit-data";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAjeQnLURWzYxxLjPKP64UDfKl66mSTaTI",
-  authDomain: "daily-report-c8f88.firebaseapp.com",
-  projectId: "daily-report-c8f88",
-  storageBucket: "daily-report-c8f88.appspot.com",
-  messagingSenderId: "278060495144",
-  appId: "1:278060495144:web:e017f41a3f5ccfbc26601d",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.APP_ID,
 };
 
 // Initialize Firebaseg
