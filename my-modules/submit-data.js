@@ -1,10 +1,10 @@
 export const submitData = async (e, addDoc, collection, db) => {
   e.preventDefault();
   const formData = new FormData(e.target);
-
+  console.log(formData);
   try {
     const docRef = await addDoc(collection(db, "reports"), {
-      data: new Date(),
+      date: new Date(),
       name: formData.get("name"),
       work: formData.get("work"),
       comment: formData.get("comment"),
